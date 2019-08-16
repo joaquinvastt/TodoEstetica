@@ -1,0 +1,161 @@
+/** Globales **/
+*{
+    margin: 0;
+}
+
+body{
+    background: #D6D6D6;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem; /** = 1200px; **/
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.borde{
+    height: 1.3rem;
+}
+
+/** Boton **/
+.boton {
+    border: .2rem solid #515151;
+    border-radius: .1rem;
+    background-color: #515151;
+    
+}
+
+
+
+
+/** Header **/
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.barra {
+    background-color: #7D64AE;
+    padding: 10px 0px;
+}
+
+
+.logo img{
+    width: 15%;
+    margin-left: 1.5rem;
+}
+
+
+.navegacion{
+    float: right;
+    margin-top: 1.6rem;
+    margin-right: 1rem;
+}
+
+.navegacion a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.navegacion a:hover{
+    color: #F79CEC;
+}
+
+.navegacion input{
+    font-family: 'Roboto',sans-serif;
+    font-size: .9rem;
+    width: 20rem;
+}
+
+.navegacion button{
+    font-family: 'Roboto',sans-serif;
+    font-size: .9rem;
+}
+
+
+/**Slider**/
+div.slider{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+div.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 15s infinite alternate;
+}
+
+div.slider ul:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+div.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+div.slider img {
+    width: 100%;
+    height: 500px;
+    
+}
+
+@keyframes cambio {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/** Footer **/
+.site-footer {
+    background-color: #7D64AE;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.nav-footer a{
+    float: left;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+.copyright {
+    margin: 0;
+    color: #ffffff;
+    float: right;
+}
