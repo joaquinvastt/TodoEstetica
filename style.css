@@ -59,6 +59,7 @@ h2 {
 .logo img{
     width: 15%;
     margin-left: 1.5rem;
+    max-width: 100%;
 }
 
 
