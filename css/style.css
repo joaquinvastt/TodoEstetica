@@ -136,7 +136,7 @@ div.slider {
     max-width: 100%;
     margin: auto;
     overflow: hidden;
-    
+    padding: 0;
 }
 
 div.slider ul {
@@ -241,7 +241,7 @@ img {
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 2rem;
 }
 
