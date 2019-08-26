@@ -46,39 +46,19 @@ h2 {
     text-align: center;
     font-size: 3rem;
     font-family: 'Oswald' ,sans-serif;
-    margin: 2.5rem;
+    margin: 4rem 2.5rem;
 }
 
 
 /** Header **/
 
-.contenido-header {
-    display: flex;
-    flex-direction: column;
-}
 
-.arreglo p{
-    font-family: 'Poppins',sans-serif;
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-}
 
-.barra {
-    background-color: #575757;
-    margin: 0;
-    position: fixed;
-    width: 100%
-}
-
+/* 
 .logo img {
     width: 16%;
     margin-left: 1.5rem;
     max-width: 100%;
-}
-
-.logo:hover {
-    opacity: 0.7;
 }
 
 .navegacion {
@@ -117,21 +97,135 @@ h2 {
 .boton-busqueda:hover{
     cursor: pointer;
 }
-
+*/
 .arreglo{
     margin-top: 7rem;
 }
 
 .arreglo h2{
     margin: 0 0 1rem 0; 
+} 
+
+.arreglo p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
+
+/* Header nuevo */
+
+header {
+    background: #575757;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.menu .logo {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu .logo img{
+    vertical-align: top;
+    height: 45px;
+    margin-left: 2rem;
+}
+
+.menu .btn-menu {
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 1rem;
+}
+
+.menu .logo:hover {
+    opacity: 0.7;
+}
+
+.menu .enlaces {
+    display: inline-block;
+    text-align: right;
+}
+
+.menu .enlaces a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.menu .enlaces i {
+    margin-right: 5px;
+}
+
+.menu .enlaces a:hover {
+    background: #f2f2f2;
+    color: #FFB73A;
+}
+
+/*Efectos del menú*/
+.headroom {
+    transition: transform .3s ease;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%); 
+}
+
+/* Mediaqueries */
+@media screen and (max-width: 720px){
+    header .menu {
+        flex-direction: column;
+    }
+
+    header .menu .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+    }
+
+    header .menu .logo .btn-menu {
+        display: inline-block;
+    }
+
+    header .menu .enlaces {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
 
 
 /**Slider**/
 
 div.slider {
     border: 5px solid #999696;
-    width: 80%;
+    width: 70%;
     height: 12%;
     max-width: 100%;
     margin: auto;
