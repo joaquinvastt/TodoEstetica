@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Todo Estetica - Registro </title>
+    <title>Todo Estetica - Inicio </title>
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -24,23 +24,37 @@
 
             <div class="enlaces" id="enlaces">
                 <a href="#"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Tiendas</a>
+                <a href="registro.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Registrarse</a>
                 <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesión</a>
-                <a href="contacto.html"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contacto</a>
             </div>
         </nav>
     </header>
 
     <section>
-        <div class="registro">
-            <h2>Registro</h2>
-            <p>¡Se parte de la familia TodoEstetica y enterate antes de todas las novedades!</p>
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <p>¡Dejanos tus datos y te contactaremos a la brevedad!</p>
+            <img src="img/Registro/relaxing-background-full-hd-1080p-494256.jpg" alt="ImagenCabañas">
         </div>
     </section>
 
-    <main>
-        <div>
-            <input type="text" placeholder="Nombre">
-        </div>
+    <main class="contenedor">
+        <h2>Llena el formulario</h2>
+        <form class="campos">
+            <fieldset>
+                <legend>Información personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+                    <label for="mail">E-Mail:</label>
+                    <input type="text" id="mail" placeholder="ejemplo@mail.com">
+
+                    <label for="celular">Celular:</label>
+                    <input type="text" id="numero" placeholder="+569 00000000">
+
+                    
+            </fieldset>
+        </form>
     </main>
 
     <footer class="site-footer seccion">

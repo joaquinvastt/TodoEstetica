@@ -15,6 +15,7 @@ body {
     margin-top: -11rem;
 }
 
+
 .etiqueta h3{
     position: relative;
     margin-top: 15rem;
@@ -123,7 +124,7 @@ header {
 }
 
 .menu {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     display: flex;
@@ -132,15 +133,10 @@ header {
     align-items: center;    
 }
 
-.menu .logo {
-    display: inline-block;
-    margin-right: 1em;
-}
 
-.menu .logo img{
-    vertical-align: top;
-    height: 45px;
-    margin-left: 2rem;
+.logo img{
+    height: 62px;
+    margin-left: px;
 }
 
 .menu .btn-menu {
@@ -153,11 +149,6 @@ header {
 
 .menu .logo:hover {
     opacity: 0.7;
-}
-
-.menu .enlaces {
-    display: inline-block;
-    text-align: right;
 }
 
 .menu .enlaces a {
@@ -411,3 +402,29 @@ img {
     text-align: start;
     font-size: 2rem;
 }
+
+
+/** CONTACTO **/
+.contacto p{
+    text-align: center;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.2rem;
+    margin: -3.5rem 0 2rem 0;
+}
+
+.campos{
+    font-family: 'Poppins', sans-serif;
+}
+
+legend {
+    font-size: 2rem;
+    color: #3D3C3C;
+}
+
+label{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
