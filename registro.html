@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Oswald|PT+Sans|Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Oswald|PT+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,17 +30,24 @@
     </header>
 
     <section>
-        <div class="registro">
-            <h2>Registro</h2>
-            <p>¡Se parte de la familia TodoEstetica y enterate antes de todas las novedades!</p>
+
+        <div class="row registro">
+
+            <div class="col-xs-12 formulario">
+                <form action="#" method="GET">
+                    <h1>Registra tu tienda!</h1>
+                    <input type="text" id="NombreTienda" name="NombreTienda" placeholder="Nombre Tienda" class="input1">
+                    <input type="text" id="Direccion" name="Direccion" placeholder="Direccion" class="input1"><br>
+                    <input type="email" Id="Correo" name="Correo" placeholder="Correo@gmail.com" class="input3"><br>
+                    <input type="text" id="NombreRepr" name="NombreRepr" placeholder="Nombre de encargado" class="input2">
+                    <input type="text" Id="Telefono" name="Telefono" placeholder="telefono" class="input2"><br>
+                    <button type="submit" onclick="ValidarCampos()">Registrar</button>
+                </form>
+            </div>
         </div>
+
     </section>
 
-    <main>
-        <div>
-            <input type="text" placeholder="Nombre">
-        </div>
-    </main>
 
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
@@ -52,12 +58,14 @@
             </nav>
             <p>Todos los Derechos Reservados 2019 &copy; </p>
         </div>
+
     </footer>
 
-
+    <script src="js/app.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/headroom.min.js"></script>
     <script src="js/menu.js"></script>
+
 </body>
 
 </html>
