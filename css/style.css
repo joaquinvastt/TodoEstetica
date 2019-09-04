@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -417,18 +418,18 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
-legend {
+.campos legend {
     font-size: 2rem;
     color: #3D3C3C;
 }
 
-label{
+.campos label{
     font-weight: 700;
     text-transform: uppercase;
     display: block;
 }
 
-input:not([type="submit"]),
+.campos input:not([type="submit"]),
 select{
     padding: 1rem;
     display: block;
