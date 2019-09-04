@@ -428,3 +428,24 @@ label{
     display: block;
 }
 
+input:not([type="submit"]),
+select{
+    padding: 1rem;
+    display: block;
+    width: 97%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.compos p{
+    background-color: #7D64AE;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
