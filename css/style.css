@@ -379,9 +379,6 @@ img {
 
 /** Registro **/
 
-
-/** borre registro ojo **/
-
 .registro h2 {
     margin-top: 9%;
     margin-bottom: 1%;
@@ -414,7 +411,7 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
-legend {
+.campos legend {
     font-size: 2rem;
     color: #3D3C3C;
 }
@@ -469,4 +466,25 @@ label {
 
 .formulario h1 {
     font-family: 'Oswald', sans-serif;
+}
+
+.campos input:not([type="submit"]),
+select {
+    padding: 1rem;
+    display: block;
+    width: 97%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.compos p {
+    background-color: #7D64AE;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
