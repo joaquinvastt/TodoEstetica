@@ -52,44 +52,11 @@ h2 {
 
 /**SLIDEEEEER**/
 
-html,
-body {
-    position: relative;
-    height: 100%;
+.slide{
+    margin: 5rem;
+    border: 1px solid #3D3C3C;
 }
 
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
 
 
 /**FRONT**/
@@ -141,6 +108,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo img {
@@ -219,71 +187,6 @@ header {
         justify-content: space-around;
     }
 }
-
-
-/**Slider**/
-
-
-/* 
-div.slider {
-    border: 5px solid #999696;
-    width: 70%;
-    height: 12%;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-    padding: 0;
-}
-
-div.slider ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: cambio 15s infinite alternate;
-}
-
-div.slider ul:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-div.slider li {
-    width: 100%;
-    list-style: none;
-}
-
-div.slider img {
-    width: 100%;
-    height: 515px;
-}
-
-@keyframes cambio {
-    0% {
-        margin-left: 0%;
-    }
-    20% {
-        margin-left: 0%;
-    }
-    25% {
-        margin-left: -100%;
-    }
-    45% {
-        margin-left: -100%;
-    }
-    50% {
-        margin-left: -200%;
-    }
-    70% {
-        margin-left: -200%;
-    }
-    75% {
-        margin-left: -300%;
-    }
-    100% {
-        margin-left: -300%;
-    }
-}
- */
 
 
 /** body **/
@@ -373,7 +276,7 @@ img {
 }
 
 .nosotros::before {
-    background-image: url(/img/background.jpg);
+    background-image: url(/img/bg.jpg);
     content: '';
 }
 
