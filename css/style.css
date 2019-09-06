@@ -39,34 +39,40 @@ h2 {
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
+
 /**SLIDEEEEER**/
-html, body {
+
+html,
+body {
     position: relative;
     height: 100%;
-  }
-  body {
+}
+
+body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color:#000;
+    color: #000;
     margin: 0;
     padding: 0;
-  }
-  .swiper-container {
+}
+
+.swiper-container {
     width: 100%;
     height: 100%;
-  }
-  .swiper-slide {
+}
+
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -83,8 +89,11 @@ html, body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+}
+
+
 /**FRONT**/
+
 .seccion {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -98,14 +107,13 @@ html, body {
     height: 1.3rem;
 }
 
-
 .arreglo {
     margin-top: 7rem;
 }
 
 .arreglo h2 {
     margin: 0 0 1rem 0;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .arreglo p {
@@ -214,6 +222,8 @@ header {
 
 
 /**Slider**/
+
+
 /* 
 div.slider {
     border: 5px solid #999696;
@@ -351,43 +361,46 @@ img {
 
 .boton:hover {
     background-color: #7D64AE;
+    color: #fff;
 }
 
+
 /**BODY PARALLAX**/
-.nosotros{
+
+.nosotros {
     position: relative;
     height: auto;
 }
 
-.nosotros::before{
+.nosotros::before {
     background-image: url(/img/background.jpg);
     content: '';
 }
 
-.nosotros .contenido-nosotros{
+.nosotros .contenido-nosotros {
     position: relative;
     padding: 200px 0;
     color: #3D3C3C;
     text-align: center;
 }
 
-.nosotros .contenido-nosotros p{
+.nosotros .contenido-nosotros p {
     font-size: 1.2rem;
     text-transform: lowercase;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 80%;
     text-align: justify;
-    padding-left: 13rem; 
+    padding-left: 13rem;
 }
 
-.nosotros .contenido-nosotros h3{
+.nosotros .contenido-nosotros h3 {
     color: #3D3C3C;
     text-transform: uppercase;
     font-size: 3vw;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.parallax::before{
+.parallax::before {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -399,7 +412,8 @@ img {
     background-attachment: fixed;
     -webkit-filter: brightness(.8);
     filter: brightness(.8);
-  }
+}
+
 
 /** Footer **/
 
@@ -428,6 +442,7 @@ img {
     color: #A4A4A4;
 }
 
+
 /** CONTACTO **/
 
 .contacto p {
@@ -454,7 +469,8 @@ img {
 }
 
 .campos input:not([type="submit"]),
-select, textarea {
+select,
+textarea {
     padding: 1rem;
     display: block;
     width: 97%;
@@ -465,12 +481,14 @@ select, textarea {
     font-family: 'Poppins', sans-serif;
 }
 
-.contacto{
+.contacto {
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
 
+
 /** Registroooooo**/
+
 .registro {
     padding: 10%;
     margin: auto;
@@ -489,7 +507,7 @@ select, textarea {
 .registro input {
     margin-bottom: 1%;
     margin-top: 2%;
-    padding: 10px;
+    padding: 18px;
 }
 
 .input1 {
@@ -501,7 +519,7 @@ select, textarea {
 }
 
 .input3 {
-    width: 88%;
+    width: 82%;
 }
 
 .formulario button {
@@ -516,7 +534,6 @@ select, textarea {
 .formulario h1 {
     font-family: 'Oswald', sans-serif;
 }
-
 
 .compos p {
     background-color: #7D64AE;
