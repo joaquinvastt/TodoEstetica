@@ -52,11 +52,10 @@ h2 {
 
 /**SLIDEEEEER**/
 
-.slide{
+.slide {
     margin: 5rem;
     border: 1px solid #3D3C3C;
 }
-
 
 
 /**FRONT**/
@@ -98,6 +97,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 9999;
 }
 
 .menu {
@@ -223,7 +223,6 @@ img {
         margin-bottom: 1rem;
         border: .1rem solid #999696;
         border-radius: 2rem;
-        
     }
 }
 
@@ -233,7 +232,7 @@ img {
     margin-left: 2.5rem;
 }
 
-.contenido a{
+.contenido a {
     text-decoration: none;
 }
 
