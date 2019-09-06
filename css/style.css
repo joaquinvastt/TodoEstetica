@@ -223,6 +223,7 @@ img {
         margin-bottom: 1rem;
         border: .1rem solid #999696;
         border-radius: 2rem;
+        
     }
 }
 
@@ -230,6 +231,10 @@ img {
     max-width: 100%;
     width: 80%;
     margin-left: 2.5rem;
+}
+
+.contenido a{
+    text-decoration: none;
 }
 
 .contenido {
