@@ -243,8 +243,12 @@ img {
 
 .entrada img {
     max-width: 100%;
-    width: 80%;
-    margin-left: 2.5rem;
+    width: 70%;
+    margin-left: 3.4rem;
+}
+
+#maicao2 {
+    margin-left: 4rem;
 }
 
 .contenido a {
@@ -263,7 +267,16 @@ img {
     text-align: center;
     font-size: .9rem;
     line-height: 1.4rem;
+    color: #575757;
 }
+
+.contenido .precio {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
 
 .contenido span {
     color: #9C39B6;
@@ -308,7 +321,6 @@ img {
 
 .nosotros .contenido-nosotros p {
     font-size: 1.1rem;
-    text-transform: lowercase;
     font-family: 'Poppins', sans-serif;
     width: 70%;
     text-align: justify;
