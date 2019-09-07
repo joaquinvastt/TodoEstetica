@@ -111,9 +111,14 @@ header {
     position: relative;
 }
 
+
 .logo img {
     height: 62px;
-    margin-left: px;
+    
+}
+
+.logo span{
+    cursor: pointer;
 }
 
 .menu .btn-menu {
@@ -124,7 +129,7 @@ header {
     margin-top: 1rem;
 }
 
-.menu .logo:hover {
+.menu .logo a:hover{
     opacity: 0.7;
 }
 
