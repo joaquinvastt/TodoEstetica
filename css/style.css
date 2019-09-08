@@ -121,9 +121,14 @@ header {
     position: relative;
 }
 
+
 .logo img {
     height: 62px;
-    margin-left: px;
+    
+}
+
+.logo span{
+    cursor: pointer;
 }
 
 .menu .btn-menu {
@@ -134,7 +139,7 @@ header {
     margin-top: 1rem;
 }
 
-.menu .logo:hover {
+.menu .logo a:hover{
     opacity: 0.7;
 }
 
@@ -240,7 +245,10 @@ img {
     max-width: 100%;
     width: 60%;
     margin-left: 5rem;
-    
+}
+
+#maicao2 {
+    margin-left: 4rem;
 }
 
 .contenido a {
@@ -259,7 +267,16 @@ img {
     text-align: center;
     font-size: .9rem;
     line-height: 1.4rem;
+    color: #575757;
 }
+
+.contenido .precio {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
 
 .contenido span {
     color: #9C39B6;
@@ -305,7 +322,6 @@ img {
 
 .nosotros .contenido-nosotros p {
     font-size: 1.1rem;
-    text-transform: lowercase;
     font-family: 'Poppins', sans-serif;
     width: 70%;
     text-align: justify;
