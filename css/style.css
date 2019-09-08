@@ -51,13 +51,14 @@ h2 {
 
 
 /**SLIDEEEEER**/
-.texto-titulo{
+
+.texto-titulo {
     padding-top: 3rem;
     text-align: center;
 }
 
-.texto-titulo p{
-    font-family: 'Poppins',sans-serif;
+.texto-titulo p {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     margin-top: -3rem;
 }
@@ -121,13 +122,11 @@ header {
     position: relative;
 }
 
-
 .logo img {
     height: 62px;
-    
 }
 
-.logo span{
+.logo span {
     cursor: pointer;
 }
 
@@ -139,7 +138,7 @@ header {
     margin-top: 1rem;
 }
 
-.menu .logo a:hover{
+.menu .logo a:hover {
     opacity: 0.7;
 }
 
@@ -275,8 +274,6 @@ img {
     font-weight: bold;
     margin-bottom: 1rem;
 }
-
-
 
 .contenido span {
     color: #9C39B6;
@@ -422,21 +419,20 @@ textarea {
 }
 
 
-/** Registroooooo**/
+/** Registro**/
 
 .registro {
-    padding: 10%;
-    margin: auto;
-    box-sizing: border-box;
-    width: 55%;
+    width: 70%;
+    margin: 10% auto;
+    display: flex;
+    overflow: hidden;
     text-align: center;
+    box-sizing: border-box;
+    padding-left: 2px;
 }
 
 .formulario {
-    border: solid 1px rgb(0, 0, 0);
-    background: #ffffff;
-    border-radius: 2rem;
-    padding: 4rem;
+    padding-top: 5%;
 }
 
 .registro input {
@@ -446,20 +442,20 @@ textarea {
 }
 
 .input1 {
-    width: 40%;
+    width: 45%;
 }
 
 .input2 {
-    width: 40%;
+    width: 45%;
 }
 
 .input3 {
-    width: 82%;
+    width: 91%;
 }
 
 .formulario button {
-    background: rgb(6, 36, 167);
-    width: 40%;
+    background: rgb(73, 73, 73);
+    width: 91%;
     margin: auto;
     padding: 10px 40px;
     margin-top: 10%;
@@ -468,6 +464,8 @@ textarea {
 
 .formulario h1 {
     font-family: 'Oswald', sans-serif;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
 }
 
 .compos p {
@@ -478,4 +476,67 @@ textarea {
     content: "";
     display: block;
     clear: both;
+}
+
+
+/** Redes sociales Registro **/
+
+.redes {
+    width: 30px;
+}
+
+.InicioRedes {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.google {
+    background: #dd4b39;
+    color: #fff;
+    height: 2rem;
+    width: 80%;
+}
+
+.facebook {
+    background: #32508e;
+    color: #fff;
+    height: 2rem;
+    width: 80%;
+}
+
+.twitter {
+    background: #55acee;
+    color: #fff;
+    height: 2rem;
+    width: 80%;
+}
+
+.InicioRedes h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    padding-top: 13%;
+    padding-bottom: 25%;
+}
+
+.InicioRedes button {
+    margin-bottom: 2%;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+
+.errores {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: rgba(180, 4, 4, 0.781);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 440px;
+    padding: 10px;
+    position: absolute;
 }
