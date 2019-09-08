@@ -222,7 +222,7 @@ img {
         justify-content: space-between;
     }
     .entrada {
-        flex: 0 1 calc(50% - 1rem);
+        flex: 0 2 calc(50% - 1rem);
     }
 }
 
@@ -230,16 +230,17 @@ img {
     .entrada {
         flex: 0 1 calc(33% - 1rem);
         background-color: #ffffff;
+        margin-top: 1rem;
         margin-bottom: 1rem;
-        border: .1rem solid #999696;
         border-radius: 2rem;
     }
 }
 
 .entrada img {
     max-width: 100%;
-    width: 80%;
-    margin-left: 2.5rem;
+    width: 60%;
+    margin-left: 5rem;
+    
 }
 
 .contenido a {
@@ -250,8 +251,8 @@ img {
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
-    font-family: 'Poppins', sans-serif;
-    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2rem;
 }
 
 .contenido h3 {
@@ -268,12 +269,13 @@ img {
 .boton {
     background-color: transparent;
     color: #3D3C3C;
-    padding: .1rem 3rem;
+    padding: .1rem .4rem;
     border: 1px solid #3D3C3C;
     display: inline-block;
     text-decoration: none;
     transition: all .6s ease;
     border-radius: 1rem;
+    font-size: .9rem;
 }
 
 .boton:hover {
@@ -338,7 +340,7 @@ img {
     background-color: #575757;
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 1.4rem;
+    padding: 1rem;
     clear: both;
     width: 100%;
 }
