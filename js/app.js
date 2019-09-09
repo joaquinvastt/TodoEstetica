@@ -107,3 +107,131 @@ function cambiaColorNormal(campo) {
         border: "1px solid #8C8C8C"
     });
 }
+
+function validarFormulario(){
+    
+    $('.alert').remove();
+
+    //Declaracion de variables
+    var nombre=$('#nombre').val(),
+        correo=$('#mail').val(),
+        celular=$('#celular').val(),
+        mensaje=$('#mensaje').val(),
+        tienda=$('#tienda').val(),
+        rutTienda=$('#rutTienda').val();
+
+    // validacion de nombre
+    if(nombre=="" || nombre==null){
+        cambiarColor("nombre");
+        mostrarAlerta("Campo Obligatorio");
+        return false;
+    }else{
+        var expresion= /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
+        if(!expresion.test(nombre)){
+            cambiarColor("nombre");
+            mostrarAlerta("No se permiten caracteres especiales o números");
+            return false;
+        }
+    }  
+    // validacion de correo
+    if(correo=="" || correo==null){
+        cambiarColor("correo");
+        mostrarAlerta("Campo Obligatorio");
+        return false;
+    }else{
+        var expresion= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+        if(!expresion.test(correo)){
+            cambiarColor("correo");
+            mostrarAlerta("Por favor ingrese un correo válido");
+            return false;
+        }
+    } 
+
+    //Validacion de telefono
+    if(celular=="" || celular==null){
+        cambiarColor("celular");
+        mostrarAlerta("CampoObligatorio");
+        return false;
+    }else{
+        var expresion= /^(\+?56)?(\s?)(0?9)(\s?)[987654]\d{7}$/;
+        if(!expresion.test(celular)){
+            cambiarColor("celular");
+            mostrarAlerta("Por favor ingrese un número de celular válido");
+            return false;
+        }
+    }
+
+    //Validacion mensaje
+    if(mensaje=="" || mensaje==null){
+        cambiarColor("mensaje");
+        mostrarAlerta("Campo Obligatorio");
+        return false;
+    }else{
+        var expresion= /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
+        if(!expresion.test(mensaje)){
+            cambiarColor("mensaje");
+            mostrarAlerta("Por favor ingrese caracteres válidos");
+            return false;
+        }
+    }
+
+    //Validacion de la tienda
+    if(tienda=="" || tienda==null){
+        cambiarColor("tienda");
+        mostrarAlerta("Campo Obligatorio");
+        return false;
+    }else{
+        var expresion= /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
+        if(!expresion.test(tienda)){
+            cambiarColor("tienda");
+            mostrarAlerta("No se permiten caracteres especiales o números");
+            return false;
+        }
+    }
+
+    //Validacion de rut tienda
+    if(rutTienda=="" || rutTienda==null){
+        cambiarColor("rutTienda");
+        mostrarAlerta("Campo Obligatorio");
+        return false;
+    }else{
+        var expresion= /^\d{1,2}\.\d{3}\.\d{3}[-][0-9kK]{1}$/;
+        if(!expresion.test(rutTienda)){
+            cambiarColor("rutTienda");
+            mostrarAlerta("Por favor, Debe ingresar un rut válido");
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+$('input').focus(function(){
+    $('.alert').remove();
+    colorDefault('nombre');
+    colorDefault('correo');
+    colorDefault('celular');
+    colorDefault('tienda');
+    colorDefault('rutTienda');
+});
+
+$('textarea').focus(function(){
+    $('.alert').remove();
+    colorDefault('mensaje');
+});
+//Función color por defecto
+function colorDefault(){
+    $('#' + dato).css({
+        border: "1px solid #999"
+    });
+}
+
+function cambiarColor(dato){
+    $('#' + dato).css({
+        border: "1px solid #dd5144"
+    });
+}
+
+function mostrarAlerta(texto){
+    $("#nombre").before('<div class="alert">Error, '+ texto +'</div>');
+}

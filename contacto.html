@@ -43,26 +43,25 @@
                 <legend>Información personal</legend>
                     <label for="nombre">* Nombre:</label>
                     <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                    <span class="help-block"></span>
 
                     <label for="mail">* E-Mail:</label>
                     <input type="text" id="mail" placeholder="ejemplo@mail.cl">
 
                     <label for="celular">* Celular:</label>
-                    <input type="text" id="numero" placeholder="Ejemplo: (+56) 9 00000000">
+                    <input type="text" id="celular" placeholder="Ejemplo: (+56) 9 00000000">
 
                     <label for="textarea">Mensaje:</label>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
             </fieldset>
-        </form>
 
-        <form method="POST" class="campos">
             <fieldset>
                 <legend>Información de la tienda</legend>
                 <label for="tienda">* Nombre de la tienda:</label>
-                <input type="text" id="nombre" placeholder="Ingresa la tienda">
+                <input type="text" id="tienda" placeholder="Ingresa la tienda">
 
                 <label for="rutTienda">* Rut:</label>
-                <input type="text" id="nombre" placeholder="Ejemplo: 83274300-3">
+                <input type="text" id="rutTienda" placeholder="Ejemplo: 83274300-3">
 
                 <label for="tipoTienda">* Tipo de Tienda:</label>
                 <select id="tipoTienda">
@@ -74,10 +73,8 @@
                 <label for="archivo">Subir Documento:</label>
                 <input type="file" name="archivo">
             </fieldset>
-
-            <input type="submit" value="Enviar" class="botoncete boton-morado">
-
         </form>
+            <input type="submit" id="btnValidar" value="Enviar" onclick="validarFormulario()" class="botoncete boton-morado">
     </main>
 
     <footer class="site-footer seccion">
@@ -95,6 +92,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/headroom.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 
 </html>
