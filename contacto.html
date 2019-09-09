@@ -32,8 +32,8 @@
 
     <section class="contacto">
         <div>
-            <h2>Llena el formulario</h2>
-            <p>¡Déjanos tus datos y te contactaremos a la brevedad!</p>
+            <h2>¡Inscribe tu tienda!</h2>
+            <p>Déjanos tus datos y te contactaremos a la brevedad</p>
         </div>
     </section>
 
@@ -41,14 +41,14 @@
         <form method="POST" class="campos bloque">
             <fieldset>
                 <legend>Información personal</legend>
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre">* Nombre:</label>
                     <input type="text" id="nombre" placeholder="Ingresa tu nombre">
 
-                    <label for="mail">E-Mail:</label>
-                    <input type="text" id="mail" placeholder="ejemplo@mail.com">
+                    <label for="mail">* E-Mail:</label>
+                    <input type="text" id="mail" placeholder="ejemplo@mail.cl">
 
-                    <label for="celular">Celular:</label>
-                    <input type="text" id="numero" placeholder="+569 00000000">
+                    <label for="celular">* Celular:</label>
+                    <input type="text" id="numero" placeholder="Ejemplo: (+56) 9 00000000">
 
                     <label for="textarea">Mensaje:</label>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
@@ -58,8 +58,25 @@
         <form method="POST" class="campos">
             <fieldset>
                 <legend>Información de la tienda</legend>
+                <label for="tienda">* Nombre de la tienda:</label>
+                <input type="text" id="nombre" placeholder="Ingresa la tienda">
 
+                <label for="rutTienda">* Rut:</label>
+                <input type="text" id="nombre" placeholder="Ejemplo: 83274300-3">
+
+                <label for="tipoTienda">* Tipo de Tienda:</label>
+                <select id="tipoTienda">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="pyme">Pyme</option>
+                    <option value="granTienda">Gran tienda</option>
+                </select>
+                
+                <label for="archivo">Subir Documento:</label>
+                <input type="file" name="archivo">
             </fieldset>
+
+            <input type="submit" value="Enviar" class="botoncete boton-morado">
+
         </form>
     </main>
 
