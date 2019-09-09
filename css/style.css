@@ -347,6 +347,7 @@ img {
 }
 
 
+
 /** Footer **/
 
 .site-footer {
@@ -380,13 +381,14 @@ img {
 .contacto p {
     text-align: center;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     margin: -3.5rem 0 2rem 0;
 }
 
 .campos {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    
 }
 
 .campos legend {
@@ -406,10 +408,9 @@ textarea {
     padding: 1rem;
     display: block;
     width: 97%;
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     margin-bottom: 2rem;
-    border: none;
-    border-radius: 1rem;
+    border: .3px solid #C7C7C7;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -418,6 +419,34 @@ textarea {
     padding-bottom: 3rem;
 }
 
+/** Botones **/
+.botoncete {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .botoncete {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.botoncete:hover {
+    cursor: pointer;
+}
+
+.boton-morado {
+    background-color: #7D64AE;
+}
 
 /** Registro**/
 
@@ -433,6 +462,7 @@ textarea {
 
 .formulario {
     padding-top: 5%;
+    background-color: #ffffff;
 }
 
 .registro input {
