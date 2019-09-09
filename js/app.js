@@ -220,7 +220,7 @@ $('textarea').focus(function(){
     colorDefault('mensaje');
 });
 //Función color por defecto
-function colorDefault(){
+function colorDefault(dato){
     $('#' + dato).css({
         border: "1px solid #999"
     });
@@ -235,3 +235,8 @@ function cambiarColor(dato){
 function mostrarAlerta(texto){
     $("#nombre").before('<div class="alert">Error, '+ texto +'</div>');
 }
+
+
+function nuevaventana (URL){
+    window.open(URL,"ventana1","width=600,height=600,scrollbars=NO")
+ }
