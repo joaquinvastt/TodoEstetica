@@ -347,7 +347,6 @@ img {
 }
 
 
-
 /** Footer **/
 
 .site-footer {
@@ -388,7 +387,6 @@ img {
 
 .campos {
     font-family: 'Oswald', sans-serif;
-    
 }
 
 .campos legend {
@@ -419,7 +417,7 @@ textarea {
     padding-bottom: 3rem;
 }
 
-.alert{
+.alert {
     display: block;
     padding: 10px 20px;
     background: #f8d7da;
@@ -428,7 +426,9 @@ textarea {
     border: 1px solid #f5c6cb;
 }
 
+
 /** Botones **/
+
 .botoncete {
     color: #ffffff;
     font-weight: 700;
@@ -443,12 +443,14 @@ textarea {
     display: block;
     flex: 0 0 100%;
 }
+
 @media (min-width: 768px) {
     .botoncete {
         display: inline-block;
         flex: 0 0 auto;
     }
 }
+
 .botoncete:hover {
     cursor: pointer;
 }
@@ -456,6 +458,7 @@ textarea {
 .boton-morado {
     background-color: #7D64AE;
 }
+
 
 /** Registro**/
 
@@ -467,6 +470,8 @@ textarea {
     text-align: center;
     box-sizing: border-box;
     padding-left: 2px;
+    background: #ffffff;
+    border-radius: 2rem;
 }
 
 .formulario {
