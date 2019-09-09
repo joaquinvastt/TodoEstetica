@@ -592,3 +592,20 @@ textarea {
     padding: 10px;
     position: absolute;
 }
+
+@media screen and (max-width: 720px) {
+    .errores {
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background: rgba(180, 4, 4, 0.781);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        color: #fff;
+        display: none;
+        font-size: 14px;
+        margin-top: -58px;
+        margin-left: 310px;
+        padding: 10px;
+        position: absolute;
+    }
+}
