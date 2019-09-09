@@ -525,29 +525,32 @@ textarea {
 .google {
     background: #dd4b39;
     color: #fff;
-    height: 2rem;
+    height: 4.7rem;
     width: 80%;
+    font-size: 2rem;
 }
 
 .facebook {
     background: #32508e;
     color: #fff;
-    height: 2rem;
+    height: 4.7rem;
     width: 80%;
+    font-size: 2rem;
 }
 
 .twitter {
     background: #55acee;
     color: #fff;
-    height: 2rem;
+    height: 4.7rem;
     width: 80%;
+    font-size: 2rem;
 }
 
 .InicioRedes h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     padding-top: 13%;
-    padding-bottom: 25%;
+    padding-bottom: 6.8%;
 }
 
 .InicioRedes button {

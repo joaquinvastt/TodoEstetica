@@ -107,3 +107,8 @@ function cambiaColorNormal(campo) {
         border: "1px solid #8C8C8C"
     });
 }
+
+
+function nuevaventana (URL){
+   window.open(URL,"ventana1","width=600,height=600,scrollbars=NO")
+}
